@@ -1,0 +1,82 @@
+.newArrival {
+  display: flex;
+  justify-content: center; }
+  .newArrival__wrapper {
+    margin: 20% 0 0 0;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+  .newArrival__title {
+    font-family: Lato;
+    font-size: 72px;
+    font-weight: 400;
+    color: #303030;
+    margin: 10px; }
+  .newArrival__discription {
+    margin: auto;
+    font-family: Lato;
+    font-style: italic;
+    color: #aaaaaa;
+    font-weight: 400;
+    font-size: 24px; }
+  .newArrival__button {
+    margin: 92px;
+    border: 1px solid #959595;
+    background-color: white;
+    font-family: Lato;
+    font-size: 14px;
+    padding: 24px;
+    color: #303030; }
+
+.gallery {
+  display: flex;
+  justify-content: center; }
+  .gallery__wrapper {
+    margin: 10% 0 0 0;
+    height: 100vh;
+    padding: 18px 0;
+    width: 90vw;
+    background-color: grey; }
+
+.subscribe {
+  display: flex;
+  justify-content: center; }
+  .subscribe__wrapper {
+    margin: 8% 0 0 0;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+  .subscribe__title {
+    font-family: Lato;
+    font-size: 36px;
+    font-weight: 700;
+    color: #303030;
+    margin: 12px; }
+  .subscribe__discription {
+    margin: auto;
+    font-family: Lato;
+    font-style: italic;
+    color: #aaaaaa;
+    font-weight: 400;
+    font-size: 18px; }
+  .subscribe__form {
+    display: flex;
+    margin: 4%;
+    align-items: center; }
+  .subscribe__email {
+    width: 475px;
+    padding: 19px;
+    background-color: white;
+    color: #303030;
+    border: 1px solid #959595;
+    border-right: none; }
+  .subscribe__button {
+    width: 95px;
+    height: 55px;
+    border: 1px solid #e67429;
+    background-color: #f68236;
+    color: white; }

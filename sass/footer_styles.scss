@@ -1,0 +1,113 @@
+.slider {
+    display: flex;
+    justify-content: center;
+
+    &__wrapper {
+        margin: 6% 0 0 0;
+        border-top: solid 1px rgb(206, 206, 206);
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__title {
+        font-family: Lato;
+        font-size: 32px;
+        font-style: italic;
+        font-weight: 400;
+        color: #606060;
+        margin: 36px;
+    }
+
+    &__container {
+        margin: 1% 0 0 0;
+        width: 90vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__left {
+        width: 60px;
+        height: 140px;
+        background-color: #c0c0c0;
+        border: none;
+    }   
+
+    &__content {
+        background-color: grey;
+        height: 140px;
+        width: 100%;
+    }
+
+    &__right {
+        width: 60px;
+        height: 140px;
+        background-color: #c0c0c0;
+        border: none;
+    }
+
+    &__arrowRight {
+        transform: rotate(180deg);
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+
+
+    &__wrapper {
+        margin: 2% 0 3% 0;
+        width: 90vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+.collection {
+    margin-top: 40px;
+    display: flex;
+    height: 130px;
+    flex-direction: column;
+    border-left: 1px solid rgb(212, 212, 212);
+    padding-left: 24px;
+
+    &__title {
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    &__list {
+        list-style: none;
+        padding: 0;
+        font-family: Lato;
+        font-size: 12px;
+        color: #303030;
+    }
+
+    &__link {
+        margin: 4px 0;
+    }
+}
+
+.social {
+    display: flex;
+    align-items: flex-start;
+
+    &__button {
+        margin: 6px 12px 0 0;
+        width: 42px;
+        height: 42px;
+        background-color: white;
+        border: solid 1px black;
+    }
+}

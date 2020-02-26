@@ -1,0 +1,59 @@
+.path {
+  align-self: flex-start;
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: 400;
+  color: #606060;
+  margin: 26px 0;
+  word-spacing: 12px; }
+
+.about {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+  .about__wrapper {
+    margin: auto;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+  .about__title {
+    margin: 0;
+    color: #303030;
+    font-family: Lato;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.8px; }
+  .about__discription {
+    margin: 12px;
+    font-size: 18px;
+    color: #606060;
+    font-family: Lato;
+    font-style: italic; }
+
+.exposition {
+  margin: auto;
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+  .exposition__wrapper {
+    width: 100%;
+    margin: 62px 12px; }
+  .exposition__img {
+    height: 400px;
+    background-color: #cfcfcf; }
+  .exposition__title {
+    margin: 64px 0 24px 0;
+    color: #303030;
+    font-family: "Lato - Bold";
+    font-size: 40px;
+    font-weight: 700; }
+  .exposition__discription {
+    color: gray;
+    font-family: "Lato - Regular";
+    font-weight: 400;
+    letter-spacing: 0.7px;
+    line-height: 26px; }
