@@ -46,7 +46,7 @@
   flex-wrap: wrap; }
 
 .product {
-  margin: 24px 55px;
+  margin: 24px 3vw;
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -60,4 +60,6 @@
     .product__discription h4 {
       margin: 36px auto 12px auto; }
     .product__discription h6 {
-      margin: auto; }
+      margin: auto;
+      font-family: Lato;
+      font-size: 16px; }
