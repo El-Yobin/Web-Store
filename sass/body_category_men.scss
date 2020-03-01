@@ -6,9 +6,9 @@ font-weight: 400;
 color: #606060;
 margin: 26px 0;
 word-spacing: 12px;
-}
+    }
 
-.categoryAll {
+.categoryMen {
     display: flex;
     justify-content: center;
 
@@ -44,20 +44,40 @@ word-spacing: 12px;
         font-size: 18px;
         font-weight: 400;
         font-style: italic;
-        text-decoration: underline;
     }
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.select {
+    font-family: Georgia;
+    font-style: italic;
+    color: #606060;
+    margin: 24px 48px;
+    width: 170px;
+    height: 24px;
+    border: none;
+    border-bottom:solid 1px #303030;
+    transform: scale(1.2);
+    outline: none;
 }
 
 .products {
 
-    margin: 0;
+    width: 100%;
+    margin: 84px auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .product {
-        margin: 24px 55px;
+        margin: 24px 3vw;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -78,6 +98,8 @@ word-spacing: 12px;
 
         h6 {
             margin: auto;
+            font-family: Lato;
+            font-size: 16px;
         }
     }
 }

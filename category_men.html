@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>S-hope</title>
-    <link rel="stylesheet" href="css\about.css">
+    <link rel="stylesheet" href="css\body_category_men.css">
     <link rel="stylesheet" href="css\header_styles.css">
     <link rel="stylesheet" href="css\footer_styles.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
@@ -18,7 +18,7 @@
                 <ul class="navbar">
                     <li class="navbar__elem"><a href="category_women.html">Women</a></li>
                     <li class="navbar__elem"><a href="category_men.html">Men</a></li>
-                    <li class="navbar__elem"><a href="category_all.html">Kids</a></li>
+                    <li class="navbar__elem"><a href="category_all.html">All</a></li>
                     <li class="navbar__elem"><a href="category_all.html">Coming Soon</a></li>
                     <li class="navbar__elem"><a href="about.html">About</a></li>
                 </ul>
@@ -33,58 +33,67 @@
             </div>
         </div>
     </header>
-    <section class="about">
-        <div class="about__wrapper">
-            <div class="path">HOME / ALL</div>
-            <h1 class="about__title">ABOUT</h1>
-            <p class="about__discription">
-                Lorem ipsum dolor sit amet enim. Etiam ullamcorp uspendisse a pellentesque.
-            </p>
-        </div>
-        <div class="exposition">
-            <div class="exposition__wrapper">
-                <div class="exposition__img"></div>
-                <h1 class="exposition__title">WHO WE ARE?</h1>
-                <div class="exposition__discription">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a
-                    pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et
-                    ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet
-                    enim.
-
-                    Phasellus fermentum in, dolor. Pellentesque facilisis. Nulla imperdiet sit amet magna. Vestibulum
-                    dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus et interdum adipiscing wisi.
-                    adipiscing. <br><br><br>
-                    Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id,
-                    eleifend justo vel bibendum sapien massa ac turpis faucibus orci luctus non, consectetuer lobortis
-                    quis, varius in, purus. Integer ultrices posuere cubilia Curae, Nulla ipsum dolor lacus, suscipit
-                </div>
+    <section class="categoryMen">
+        <div class="categoryMen__wrapper">
+            <div class="path">HOME / MEN</div>
+            <div class="category">
+                <h1 class="category__title">MEN</h1>
+                <h4 class="category__show">All products</h4>
             </div>
-            <div class="exposition__wrapper">
-                <div class="exposition__img"></div>
-                <h1 class="exposition__title">WHAT WE ARE DOING?</h1>
-                <div class="exposition__discription">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a
-                    pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et
-                    ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet
-                    enim.
-
-                    Phasellus fermentum in, dolor. Pellentesque facilisis. Nulla imperdiet sit amet magna. Vestibulum
-                    dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus et interdum adipiscing wisi.
-                    adipiscing. <br><br><br>
-                    Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id,
-                    eleifend justo vel bibendum sapien massa ac turpis faucibus orci luctus non, consectetuer lobortis
-                    quis, varius in, purus. Integer ultrices posuere cubilia Curae, Nulla ipsum dolor lacus, suscipit
-                </div>
+            <div>
+                <form class="filter" action="#">
+                    <select class="select" name="country">
+                        <option disabled selected value="">Choose country</option>
+                        <option value="Switzerland">Switzerland</option>
+                        <option value="Russia">Russia</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Germany">Germany</option>
+                    </select>
+                    <select class="select" name="type">
+                        <option disabled selected value="Style">Choose type</option>
+                        <option value="Smart">Smart</option>
+                        <option value="Mechanical">Mechanical</option>
+                        <option value="Kwartz">Kwartz</option>
+                        <option value="Electrical">Electrical</option>
+                    </select>
+                    <select class="select" name="country">
+                        <option disabled selected value="Style">Choose style</option>
+                        <option value="Regular">Regular</option>
+                        <option value="Sport">Sport</option>
+                        <option value="Classic">Classic</option>
+                        <option value="Sport">Sport</option>
+                    </select>
+                </form>
             </div>
-        </div>
-    </section>
-    <section class="slider">
-        <div class="slider__wrapper">
-            <h3 class="slider__title">Check our lookbook</h3>
-            <div class="slider__container">
-                <button class="slider__left"><img class="slider__arrowLeft" src="icons\arrow_icon.svg" alt="left">
-                </button>
-                <div class="slider__content"></div>
-                <button class="slider__right"><img class="slider__arrowRight" src="icons\arrow_icon.svg"
-                        alt="right"></button>
+            <div class="products">
+                <div class="product">
+                    <div class="product__img"></div>
+                    <div class="product__discription">
+                        <h4>Double-Layered Top</h4>
+                        <h6>€ 89,95</h6>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product__img"></div>
+                    <div class="product__discription">
+                        <h4>Double-Layered Top</h4>
+                        <h6>€ 89,95</h6>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product__img"></div>
+                    <div class="product__discription">
+                        <h4>Double-Layered Top</h4>
+                        <h6>€ 89,95</h6>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product__img"></div>
+                    <div class="product__discription">
+                        <h4>Double-Layered Top</h4>
+                        <h6>€ 89,95</h6>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

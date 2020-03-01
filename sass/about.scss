@@ -32,10 +32,11 @@
     }
 
     &__discription {
-        margin: 12px;
+        font-family: Georgia;
+        margin: 8px;
+        color: #7a7a7a;
         font-size: 18px;
-        color: #606060;
-        font-family: Lato;
+        font-weight: 400;
         font-style: italic;
     }
 }
