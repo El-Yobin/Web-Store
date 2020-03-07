@@ -1,9 +1,9 @@
 $atom: 90vw / 24;
 $offset: 24px;
 
-$medium: "max-width: 900px";
-$small: "max-width: 550px";
-$extra_small: "max-width: 420px";
+$medium: 'max-width: 900px';
+$small: 'max-width: 550px';
+$extra_small: 'max-width: 420px';
 
 .path {
   align-self: flex-start;
@@ -15,7 +15,7 @@ $extra_small: "max-width: 420px";
   word-spacing: 12px;
 }
 
-.categoryMen {
+.catalog {
   display: flex;
   justify-content: center;
 

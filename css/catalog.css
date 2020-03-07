@@ -7,10 +7,10 @@
   margin: 26px 0;
   word-spacing: 12px; }
 
-.categoryMen {
+.catalog {
   display: flex;
   justify-content: center; }
-  .categoryMen__wrapper {
+  .catalog__wrapper {
     margin: 0 0 0 0;
     width: 90vw;
     display: flex;

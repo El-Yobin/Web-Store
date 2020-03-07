@@ -15,9 +15,7 @@ const getProducts = async (url, params) => {
 };
 
 const main = async () => {
-  const products = await getProducts('api/products', {
-    category: 'Men'
-  });
+  const products = await getProducts('api/products', {});
 
   console.log(products);
   fillGallery(products);
@@ -31,12 +29,11 @@ form.submit = () => {
   const formValues = Object.fromEntries(
     Array.from(form.elements).map(({ name, value }) => [name, value])
   );
-  formValues.category = 'Men';
   const refresh = async () => {
     const products = await getProducts('api/products', formValues);
 
     document
-      .querySelector('.categoryMen__wrapper')
+      .querySelector('.catalog__wrapper')
       .removeChild(document.querySelector('.products'));
 
     fillGallery(products);
@@ -50,7 +47,7 @@ form.onchange = () => {
 };
 
 function fillGallery(products) {
-  const wrapper = document.querySelector('.categoryMen__wrapper');
+  const wrapper = document.querySelector('.catalog__wrapper');
   const container = document.createElement('div');
   container.setAttribute('class', 'products');
 
