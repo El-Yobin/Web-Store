@@ -1,110 +1,139 @@
+$atom: 90vw / 24;
+$offset: 24px;
+
+$medium: "max-width: 900px";
+$small: "max-width: 550px";
+$extra_small: "max-width: 420px";
+
 .path {
-align-self: flex-start;
-font-family: Lato;
-font-size: 12px;
-font-weight: 400;
-color: #606060;
-margin: 26px 0;
-word-spacing: 12px;
-    }
-
-.categoryMen {
-    display: flex;
-    justify-content: center;
-
-    &__wrapper {
-        margin: 0 0 0 0;
-        width: 90vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
+  align-self: flex-start;
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: 400;
+  color: #606060;
+  margin: 26px 0;
+  word-spacing: 12px;
 }
 
-.category {
-    margin-top: 42px;
+.categoryMen {
+  display: flex;
+  justify-content: center;
+
+  &__wrapper {
+    margin: 0 0 0 0;
+    width: 90vw;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    font-family: Lato;
+  }
+}
 
-    &__title {
-        color: #303030;
-        font-size: 36px;
-        font-weight: 700;
-        margin: 0;
-    }
-    
-    &__show {
-        font-family: Georgia;
-        margin: 8px;
-        color: #7a7a7a;
-        font-size: 18px;
-        font-weight: 400;
-        font-style: italic;
-    }
+.category {
+  margin-top: 42px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Lato;
+
+  &__title {
+    color: #303030;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  &__show {
+    font-family: Georgia;
+    margin: 8px;
+    color: #7a7a7a;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+  }
 }
 
 .filter {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .select {
-    font-family: Georgia;
-    font-style: italic;
-    color: #606060;
-    margin: 24px 48px;
-    width: 170px;
-    height: 24px;
-    border: none;
-    border-bottom:solid 1px #303030;
-    transform: scale(1.2);
-    outline: none;
+  font-family: Georgia;
+  font-style: italic;
+  color: #606060;
+  margin: 24px 48px;
+  width: 170px;
+  height: 24px;
+  border: none;
+  border-bottom: solid 1px #303030;
+  transform: scale(1.2);
+  outline: none;
 }
 
 .products {
-
-    width: 100%;
-    margin: 84px auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  width: 100%;
+  margin: 84px 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .product {
-        margin: 24px 3vw;
-        display: flex;
-        flex-direction: column;
-        transition: 0.2s;
+  display: flex;
+  flex-direction: column;
+  transition: 0.2s transform;
+  overflow: hidden;
+  margin: $offset;
+  flex-basis: calc(90vw / 5 - 2 * 24px);
 
-        &:hover {
-            transform: scale(1.1);
-        }
-    
-    &__img {
-        width: auto;
-        height: 324px;
+  @media ($medium) {
+    flex-basis: calc(90vw / 3 - 2 * 24px);
+  }
+
+  @media ($small) {
+    flex-basis: calc(90vw / 2 - 2 * 24px);
+  }
+
+  &__imgContainer {
+    width: 100%;
+    height: 5 * $atom;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__discription {
+    display: flex;
+    flex-direction: column;
+
+    h4 {
+      margin: 36px auto 12px auto;
+      max-width: 100%;
+      text-overflow: ellipsis;
+      overflow: hidden;
     }
 
-    &__discription {
-        display: flex;
-        flex-direction: column;
-
-        h4 {
-            margin: 36px auto 12px auto;
-            max-width: 150px;
-        }
-
-        h6 {
-            color: #ff771c;
-            margin: auto;
-            font-family: Georgia;
-            font-size: 16px;
-        }
+    h6 {
+      color: #ff771c;
+      margin: auto;
+      font-family: Georgia;
+      font-size: 16px;
+      max-width: 100%;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
     }
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
