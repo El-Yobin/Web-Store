@@ -80,12 +80,15 @@ word-spacing: 12px;
         margin: 24px 3vw;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        transition: 0.2s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
     
     &__img {
-        width: 208px;
-        height: 256px;
-        border: 1px solid black;
+        width: auto;
+        height: 324px;
     }
 
     &__discription {
@@ -94,11 +97,13 @@ word-spacing: 12px;
 
         h4 {
             margin: 36px auto 12px auto;
+            max-width: 150px;
         }
 
         h6 {
+            color: #ff771c;
             margin: auto;
-            font-family: Lato;
+            font-family: Georgia;
             font-size: 16px;
         }
     }

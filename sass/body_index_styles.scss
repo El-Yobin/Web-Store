@@ -45,10 +45,27 @@
 
     &__wrapper {
         margin: 10% 0 0 0;
-        height: 100vh;
-        padding: 18px 0;
         width: 90vw;
-        background-color: grey;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        transition: 0.2s;
+    }
+
+    &__item {
+        margin: 24px;
+    }
+
+    &__image {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        transition: 0.4s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 }
 

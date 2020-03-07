@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>S-hope</title>
+    <link rel="stylesheet" href="css\basket_styles.css">
+    <link rel="stylesheet" href="css\header_styles.css">
+    <link rel="stylesheet" href="css\footer_styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+    <script defer src="index.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="anchors">
+                <a href="index.html"><button class="logo">SH</button></a>
+                <ul class="navbar">
+                    <li class="navbar__elem"><a href="category_women.html">Women</a></li>
+                    <li class="navbar__elem"><a href="category_men.html">Men</a></li>
+                    <li class="navbar__elem"><a href="category_all.html">All</a></li>
+                    <li class="navbar__elem"><a href="category_all.html">Coming Soon</a></li>
+                    <li class="navbar__elem"><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="user">
+                <button class="user__login">
+                    <img class="user__icon" src="icons\user_icon.svg" alt="user">Log In</button>
+                <button class="user__basket">
+                    <a href="basket.html"><img class="user__icon" src="icons\basket_icon.svg" alt="basket">Basket<span>
+                            (0)</span></a></button>
+                <button class="user__search">
+                    <img src="icons\sarch_icon.svg" alt="search"></button>
+            </div>
+        </div>
+    </header>
+    <section class="basket">
+        <div class="basket__wrapper">
+            <h1 class="basket__title">YOUR SHOPPING BAG</h1>
+            <h4 class="basket__discription">Items reserved for limited time only</h4>
+            <ul class="legend">
+                <li>Product</li>
+                <li>Discription</li>
+                <li>Color</li>
+                <li>Qty</li>
+                <li>Amount</li>
+                <li>Delete</li>
+            </ul>
+            <div class="products">
+                <div class="product">
+                    <img class="product__img" src="" alt="product">
+                    <div class="product__info">
+                        <h4>SOME CLOCKS</h4>
+                        <h6>ref. 3403/304</h6>
+                    </div>
+                    <div class="product__color">COLOR</div>
+                    <div class="qty">
+                        <div class="qty__amount">
+                            1
+                        </div>
+                        <div class="qty__buttons">
+                            <button class="qty__button">+</button>
+                            <button class="qty__button">-</button>
+                        </div>
+                    </div>
+                    <div class="product__amount">234 $</div>
+                    <button class="product__delete">&#10006;</button>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="" alt="product">
+                    <div class="product__info">
+                        <h4>SOME CLOCKS</h4>
+                        <h6>ref. 3403/304</h6>
+                    </div>
+                    <div class="product__color">COLOR</div>
+                    <div class="qty">
+                        <div class="qty__amount">
+                            1
+                        </div>
+                        <div class="qty__buttons">
+                            <button class="qty__button">+</button>
+                            <button class="qty__button">-</button>
+                        </div>
+                    </div>
+                    <div class="product__amount">234 $</div>
+                    <button class="product__delete">&#10006;</button>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="" alt="product">
+                    <div class="product__info">
+                        <h4>SOME CLOCKS</h4>
+                        <h6>ref. 3403/304</h6>
+                    </div>
+                    <div class="product__color">COLOR</div>
+                    <div class="qty">
+                        <div class="qty__amount">
+                            1
+                        </div>
+                        <div class="qty__buttons">
+                            <button class="qty__button">+</button>
+                            <button class="qty__button">-</button>
+                        </div>
+                    </div>
+                    <div class="product__amount">234 $</div>
+                    <button class="product__delete">&#10006;</button>
+                </div>
+            </div>
+            <div class="subtotal">
+                <div class="subtotal__text">Subtotal:<span class="subtotal__amount">2344 $</span></div>
+            </div>
+            <div class="division">
+                <img src="icons\division_shape.svg" alt="division">
+            </div>
+            <div class="shipping">
+                <div class="shipping__title">SHIPPING ADRESS</div>
+                <div class="shipping__discription">All fields are required</div>
+                <form class="form" action="#">
+                    <div class="form__discription">SELECT DELIVERY METHOD</div>
+                    <select class="form__delivery" name="" id="">
+                        <option value="DHL">DHL</option>
+                        <option value="Post of Russia">Post of Russia</option>
+                        <option value="Contraband">Contraband</option>
+                    </select>
+                    <div class="form__discription">YOUR NAME</div>
+                    <div class="form__name">
+                        <input class="form__firstname" type="text" name="First Name" placeholder="First Name">
+                        <input class="form__secondname" type="text" name="Second Name" placeholder="Second Name">
+                    </div>
+                    <div class="form__discription">YOUR ADRESS</div>
+                    <div class="form__wrapper">
+                        <textarea placeholder="Your adress" name="adress" id="" class="form__adress"></textarea>
+                    </div>
+                    <div class="form__discription">YOUR CONTACTS</div>
+                    <div class="form__user">
+                        <input placeholder="Your E-mail" class="form__email" type="text">
+                        <input placeholder="Your Phone Number" class="form__phone" type="text">
+                    </div>
+                </form>
+            </div>
+            <div class="division">
+                <img src="icons\division_shape.svg" alt="division">
+            </div>
+            <div class="payment">
+                <div class="payment__title">PAYMENT OPTIONS</div>
+                <div class="payment__discription">All fields are required</div>
+                <div class="price">
+                    <div class="price__text">
+                        <div class="price__subtotal">Subtotal:</div>
+                        <div class="price__shipping">Shipping:</div>
+                        <div class="price__total">Total:</div>
+                    </div>
+                    <div class="price__amount">
+                        <div class="price__subtotal">2344 $</div>
+                        <div class="price__shipping">15 $</div>
+                        <div class="price__total">2359 $</div>
+                    </div>
+                </div>
+                <div class="method">
+                    <div class="method__discription">
+                        SELECT PAYMENT METHOD
+                    </div>
+                    <form class="method__form" action="">
+                        <select class="method__select" name="" id="">
+                            <option class="method__option" value="VISA">VISA</option>
+                            <option class="method__option" value="MASTERCARD">MASTERCARD</option>
+                            <option class="method__option" value="PAYPAL">PAYPAL</option>
+                        </select>
+                        <button class="method__apply">ORDER NOW</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slider">
+        <div class="slider__wrapper">
+            <h3 class="slider__title">Check our lookbook</h3>
+            <div class="slider__container">
+                <button class="slider__left"><img class="slider__arrowLeft" src="icons\arrow_icon.svg" alt="left">
+                </button>
+                <div class="slider__content"></div>
+                <button class="slider__right"><img class="slider__arrowRight" src="icons\arrow_icon.svg"
+                        alt="right"></button>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="collection">
+                <h5 class="collection__title">COLLECTION</h5>
+                <ul class="collection__list">
+                    <li class="collection__link"><a href="#">Woman</a></li>
+                    <li class="collection__link"><a href="#">Men</a></li>
+                    <li class="collection__link"><a href="#">Kids</a></li>
+                    <li class="collection__link"><a href="#">Coming Soon</a></li>
+                </ul>
+            </div>
+            <div class="collection">
+                <h5 class="collection__title">SITE</h5>
+                <ul class="collection__list">
+                    <li class="collection__link"><a href="#">Terms of Service</a></li>
+                    <li class="collection__link"><a href="#">Privacy Policy</a></li>
+                    <li class="collection__link"><a href="#">Copyright Policy</a></li>
+                    <li class="collection__link"><a href="#">Press Kit</a></li>
+                    <li class="collection__link"><a href="#">Support</a></li>
+                </ul>
+            </div>
+            <div class="collection">
+                <h5 class="collection__title">SHOP</h5>
+                <ul class="collection__list">
+                    <li class="collection__link"><a href="#">About Us</a></li>
+                    <li class="collection__link"><a href="#">Shipping Methods</a></li>
+                    <li class="collection__link"><a href="#">Career</a></li>
+                    <li class="collection__link"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="collection">
+                <h5 class="collection__title">SOCIAL</h5>
+                <ul class="collection__list">
+                    <li class="collection__link">Shoper is made with love in Kaluga</li>
+                    <li class="collection__link">2020 All rights reserved, Yobin.</li>
+                </ul>
+                <div class="social">
+                    <button class="social__button"><img src="icons\twitter_icon.svg" alt="twitter"></button>
+                    <button class="social__button"><img src="icons\facebook_icon.svg" alt="facebook"></button>
+                    <button class="social__button"><img src="icons\instagramm_icon.svg" alt="instagramm"></button>
+                </div>
+            </div>
+    </footer>
+</body>

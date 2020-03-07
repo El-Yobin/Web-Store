@@ -35,10 +35,21 @@
   justify-content: center; }
   .gallery__wrapper {
     margin: 10% 0 0 0;
-    height: 100vh;
-    padding: 18px 0;
     width: 90vw;
-    background-color: grey; }
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: 0.2s; }
+  .gallery__item {
+    margin: 24px; }
+  .gallery__image {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    transition: 0.4s; }
+    .gallery__image:hover {
+      transform: scale(1.1); }
 
 .subscribe {
   display: flex;
