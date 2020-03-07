@@ -1,10 +1,10 @@
+/* eslint-disable no-console */
 const path = require('path');
 const express = require('express');
 const connect = require('connect');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const session = require('express-session');
-const _ = require('lodash');
 const db = require('./dbConnect');
 
 const app = express();
@@ -36,7 +36,7 @@ app.use(
 );
 
 app.get('/api/products', (req, res) => {
-  const { category, country, type, style } = req.query;
+  const { category, country, type, style, limit } = req.query;
 
   const productsQuery = 'select * from product';
 
@@ -57,9 +57,9 @@ app.get('/api/products', (req, res) => {
     ? `WHERE ${filteredConditions.join(' AND ')}`
     : '';
 
-  const query = `${productsQuery} ${conditionsString}`;
-
-  console.log(query); // потом удалить
+  const query = `${productsQuery} ${conditionsString} ${
+    limit ? 'LIMIT' : ''
+  } ${limit || ''}`;
 
   db.any(query)
     .then(products => res.send(products))

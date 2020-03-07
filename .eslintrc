@@ -9,7 +9,6 @@
     "import/prefer-default-export": "off",
     "prefer-promise-reject-errors": "off",
     "no-throw-literal": "off",
-    "quotes": ["error", "single"],
-    "jsx-quotes": ["error", "prefer-double"]
+    "quotes": ["error", "single"]
   }
 }

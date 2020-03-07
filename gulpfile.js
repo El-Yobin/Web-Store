@@ -1,32 +1,34 @@
-var gulp = require('gulp');
-var browserSync = require('browser-sync').create();
-var sass = require('gulp-sass');
+const gulp = require('gulp');
+const browserSync = require('browser-sync').create();
+const sass = require('gulp-sass');
 
-gulp.task('sass', function (done) {
-    gulp.src("./sass/*.scss")
-        .pipe(sass())
-        .pipe(gulp.dest("./css"))
-        .pipe(browserSync.stream());
+gulp.task('sass', done => {
+  gulp
+    .src('./sass/*.scss')
+    .pipe(sass())
+    .pipe(gulp.dest('./css'))
+    .pipe(browserSync.stream());
 
-
-    done();
+  done();
 });
 
-gulp.task('serve', function (done) {
+gulp.task('serve', done => {
+  browserSync.init({
+    server: './'
+  });
 
-    browserSync.init({
-        server: "./"
-    });
-
-    gulp.watch("./sass/*.scss", gulp.series('sass'));
-    gulp.watch("./*.html").on('change', () => {
-        browserSync.reload();
-        done();
-    });
-
+  gulp.watch('./sass/*.scss', gulp.series('sass'));
+  gulp.watch('./*.html').on('change', () => {
+    browserSync.reload();
     done();
+  });
+
+  gulp.watch('./*.js').on('change', () => {
+    browserSync.reload();
+    done();
+  });
+
+  done();
 });
-
-
 
 gulp.task('default', gulp.series('sass', 'serve'));

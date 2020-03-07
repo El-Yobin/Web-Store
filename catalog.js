@@ -9,41 +9,7 @@ const getProducts = async (url, params) => {
 
   const urlString = `http://localhost:4000/${url}${paramsString}`;
 
-  const getProducts = async () => fetch(urlString);
-
-  return getProducts().then(r => r.json());
-};
-
-const main = async () => {
-  const products = await getProducts('api/products', {});
-
-  console.log(products);
-  fillGallery(products);
-};
-
-main();
-
-const form = document.querySelector('.filter');
-
-form.submit = () => {
-  const formValues = Object.fromEntries(
-    Array.from(form.elements).map(({ name, value }) => [name, value])
-  );
-  const refresh = async () => {
-    const products = await getProducts('api/products', formValues);
-
-    document
-      .querySelector('.catalog__wrapper')
-      .removeChild(document.querySelector('.products'));
-
-    fillGallery(products);
-  };
-
-  refresh();
-};
-
-form.onchange = () => {
-  form.submit();
+  return fetch(urlString).then(r => r.json());
 };
 
 function fillGallery(products) {
@@ -51,7 +17,7 @@ function fillGallery(products) {
   const container = document.createElement('div');
   container.setAttribute('class', 'products');
 
-  for (let i = 0; i < products.length; i++) {
+  for (let i = 0; i < products.length; i += 1) {
     const containerWrapper = document.createElement('div');
     containerWrapper.setAttribute('class', 'product');
 
@@ -63,7 +29,7 @@ function fillGallery(products) {
     image.setAttribute('class', 'product__img');
     image.setAttribute(
       'style',
-      `background-image: url(images\/${products[i].id_model}.jpg)`
+      `background-image: url(images/${products[i].id_model}.jpg)`
     );
     imageContainer.append(image);
 
@@ -85,3 +51,35 @@ function fillGallery(products) {
 
   wrapper.append(container);
 }
+
+const main = async () => {
+  const products = await getProducts('api/products', { limit: 10 });
+
+  fillGallery(products);
+};
+
+main();
+
+const form = document.querySelector('.filter');
+
+form.submit = () => {
+  const formValues = Object.fromEntries(
+    Array.from(form.elements).map(({ name, value }) => [name, value])
+  );
+  formValues.limit = 10;
+  const refresh = async () => {
+    const products = await getProducts('api/products', formValues);
+
+    document
+      .querySelector('.catalog__wrapper')
+      .removeChild(document.querySelector('.products'));
+
+    fillGallery(products);
+  };
+
+  refresh();
+};
+
+form.onchange = () => {
+  form.submit();
+};
