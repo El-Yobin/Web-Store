@@ -1,124 +1,127 @@
 .newArrival {
+  display: flex;
+  justify-content: center;
+
+  &__wrapper {
+    margin: 20% 0 0 0;
+    width: 90vw;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
 
-    &__wrapper {
-        margin: 20% 0 0 0;
-        width: 90vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
+  &__title {
+    font-family: Lato;
+    font-size: 72px;
+    font-weight: 400;
+    color: #303030;
+    margin: 10px;
+  }
 
-    &__title {
-        font-family: Lato;
-        font-size: 72px;
-        font-weight: 400;
-        color: #303030;
-        margin: 10px;
-    }
+  &__discription {
+    margin: auto;
+    font-family: Lato;
+    font-style: italic;
+    color: #aaaaaa;
+    font-weight: 400;
+    font-size: 24px;
+  }
 
-    &__discription {
-        margin: auto;
-        font-family: Lato;
-        font-style: italic;
-        color: #aaaaaa;
-        font-weight: 400;
-        font-size: 24px;
-    }
-
-    &__button {
-        margin: 92px;
-        border: 1px solid #959595;
-        background-color: white;
-        font-family: Lato;
-        font-size: 14px;
-        padding: 24px;
-        color: #303030;
-    }
+  &__button {
+    margin: 92px;
+    border: 1px solid #959595;
+    background-color: white;
+    font-family: Lato;
+    font-size: 14px;
+    padding: 24px;
+    color: #303030;
+  }
 }
 
 .gallery {
+  display: flex;
+  justify-content: center;
+
+  &__wrapper {
+    margin: 10% 0 0 0;
+    width: 90vw;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
+    transition: 0.2s;
+  }
 
-    &__wrapper {
-        margin: 10% 0 0 0;
-        width: 90vw;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        transition: 0.2s;
+  &__item {
+    margin: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__image {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    transition: 0.4s;
+
+    &:hover {
+      transform: scale(1.1);
     }
-
-    &__item {
-        margin: 24px;
-    }
-
-    &__image {
-        width: 100%;
-        max-width: 350px;
-        height: auto;
-        transition: 0.4s;
-
-        &:hover {
-            transform: scale(1.1);
-        }
-    }
+  }
 }
 
 .subscribe {
+  display: flex;
+  justify-content: center;
+
+  &__wrapper {
+    margin: 8% 0 0 0;
+    width: 90vw;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
 
-    &__wrapper {
-        margin: 8% 0 0 0;
-        width: 90vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
+  &__title {
+    font-family: Lato;
+    font-size: 36px;
+    font-weight: 700;
+    color: #303030;
+    margin: 12px;
+  }
 
-    &__title {
-        font-family: Lato;
-        font-size: 36px;
-        font-weight: 700;
-        color: #303030;
-        margin: 12px;
-    }
+  &__discription {
+    margin: auto;
+    font-family: Lato;
+    font-style: italic;
+    color: #aaaaaa;
+    font-weight: 400;
+    font-size: 18px;
+  }
 
-    &__discription {
-        margin: auto;
-        font-family: Lato;
-        font-style: italic;
-        color: #aaaaaa;
-        font-weight: 400;
-        font-size: 18px;
-    }
+  &__form {
+    display: flex;
+    margin: 4%;
+    align-items: center;
+  }
 
-    &__form {
-        display: flex;
-        margin: 4%;
-        align-items: center;
-    }
+  &__email {
+    width: 475px;
+    padding: 19px;
+    background-color: white;
+    color: #303030;
+    border: 1px solid #959595;
+    border-right: none;
+  }
 
-    &__email {
-        width: 475px;
-        padding: 19px;
-        background-color: white;
-        color: #303030;
-        border: 1px solid #959595;
-        border-right: none;
-    }
-
-    &__button {
-        width: 95px;
-        height: 55px;
-        border: 1px solid #e67429;
-        background-color: #f68236;
-        color: white;
-    }
+  &__button {
+    width: 95px;
+    height: 55px;
+    border: 1px solid #e67429;
+    background-color: #f68236;
+    color: white;
+  }
 }
